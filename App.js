@@ -10,7 +10,7 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator 
-        initialRouteName='Search'
+        initialRouteName='Home'
       >
         <Stack.Screen 
           name="Home" 

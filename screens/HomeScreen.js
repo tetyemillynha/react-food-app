@@ -7,7 +7,7 @@ const HomeScreen = ({ navigation }) => {
         <Text>Home Screens</Text>
         <Button
             color="red"
-            title="Login"
+            title="Search Screen"
             onPress={() => navigation.navigate('Search') }
         />
     </View>

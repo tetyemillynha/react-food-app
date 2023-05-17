@@ -21,9 +21,15 @@ export default () => {
         }
     }
 
+    const filterResultsByPrice = (price) => {
+        return results.filter((result) => {
+            return result.price === price;
+        })
+    }
+
     useEffect(() => {
         searchApi('pasta');
     }, []);
 
-    return [searchApi, results, errorMessage];
+    return [searchApi, filterResultsByPrice, results, errorMessage];
 }
